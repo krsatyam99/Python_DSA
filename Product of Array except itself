@@ -1,0 +1,18 @@
+# Product of Array except itself
+test=[1,2,3,4]
+n = len(test) 
+temp = 1
+prod = [1 for i in range(n)]  #[1,1,1,1]
+for i in range(n):  # left indexing
+    prod[i] = temp 
+    temp *= test[i] 
+    print(prod,temp) #[1, 1, 2, 6]
+print("----------------------------")
+right_temp = 1
+for i in range(n - 1, -1, -1): # REVERSING THE LIST WITH -1 STEPS 
+    prod[i] *= right_temp 
+    right_temp *= test[i] 
+    print(prod , right_temp) # [24, 12, 8, 6]
+# for i in range(n): 
+#     print(prod[i] ,end ="") 
+
