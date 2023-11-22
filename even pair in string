@@ -1,0 +1,13 @@
+def SearchingChallenge(s):
+  s_lenth= len(s)-1
+  for i in range(s_lenth):
+    if s[i].isdigit() and s[i+1].isdigit():
+      if int(s[i:i+2]) % 2 == 0:
+        return True
+     
+    
+  return False
+ 
+print(SearchingChallenge("3gy41d216"))  # Output: true
+print(SearchingChallenge("7r5gg812"))        # Output: true
+print(SearchingChallenge("abc123def"))  
