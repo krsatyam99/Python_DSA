@@ -1,0 +1,10 @@
+class Solution:
+    def isPalindrome(self, s: str) -> bool:
+        d =s.lower()
+        b =''.join(filter(str.isalnum , d)) # Is remove non numeric data in strings
+        c = b[::-1]
+        if c != b:
+            return False
+        else:
+            return True
+        
