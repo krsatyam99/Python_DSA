@@ -1,0 +1,72 @@
+# Online Python compiler (interpreter) to run Python online.
+# Write Python 3 code in this online editor and run it.
+arr = [10, 2, 13, 17, 11, 11, 34, 21]
+k =2
+
+g = k-1
+
+l2 = []
+l3 = []
+
+
+for i in range(0,len(arr)):
+    if i > g:
+        
+    
+        l2.append(arr[i])
+    else:
+        l3.append(arr[i])
+        
+  
+
+
+# arr = l2 + l3
+# print(arr)
+
+
+n = len(arr)
+k = k % n  # In case k is larger than the length of the array
+
+# Reverse the entire array
+arr.reverse()
+print(arr,"step1")
+
+# Reverse the first k elements
+arr[:k] = reversed(arr[:k])
+print(arr,"step2")
+
+# Reverse the remaining elements
+arr[k:] = reversed(arr[k:])
+
+print(arr)
+
+        
+
+
+
+
+# class Solution:
+#     def rotate(self, nums: List[int], k: int) -> None:
+#         """
+#         Do not return anything, modify nums in-place instead.
+#         """
+#         n = len(nums)
+#         k = k % n  # In case k is larger than the length of the array
+
+#         # Reverse the entire array
+#         nums.reverse()
+
+#         # Reverse the first k elements
+#         nums[:k] = reversed(nums[:k])
+
+#         # Reverse the remaining elements
+#         nums[k:] = reversed(nums[k:])
+
+                
+        
+                
+    
+
+
+    
+
