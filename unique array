@@ -1,0 +1,26 @@
+nums = [3,2,1,2,1,7]
+nums.sort()
+# print(nums)
+a = len(nums)
+ans = 0
+seen = set()
+
+for num in nums:
+    while num in seen:
+        num += 1
+        ans += 1
+    seen.add(num)
+
+print(ans)
+
+
+class Solution:
+  def minIncrementForUnique(self, nums: List[int]) -> int:
+    ans = 0
+    minAvailable = 0
+
+    for num in sorted(nums):
+      ans += max(minAvailable - num, 0)
+      minAvailable = max(minAvailable, num) + 1
+
+    return ans
