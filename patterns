@@ -1,0 +1,45 @@
+l = [114800093,5,117,64,9,150000]
+
+test=l[0]
+# print(test)
+for i in range(len(l)-1):
+    if test > l[i+1]:
+        # test=test
+        pass
+    else:
+        test=l[i+1]
+print(test)
+
+
+
+for i in range(4):
+    for j in range(i+2):
+        print(i , end=" ")
+    print()
+ # Add this line to move to the next line after each row
+ 
+    
+
+for i in range(4):
+    for j in range(i+1):
+        print(i , end=" ")
+    print()
+    
+    
+    
+print("----------------------------")
+
+
+
+n=5
+
+for i in range(n):
+    for j in range(n-i):
+        print(n-i , end=" ")
+    print()
+
+        
+
+
+        
+    
