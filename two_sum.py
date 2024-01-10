@@ -17,4 +17,19 @@ for index,value in enumerate(l1):
     else:
         my_map.update({value:index})
         # print(my_map)
+
+ ## my code
+a = [12,8,5,6,9,0,4,0,8,3]
+target = 13
+n = len(a) 
+flag = False
+for i in range(n):
+    for j in range(i+1,n):
+        if a[j] == target-a[i]:
+            print(f"{i,j} along with {a[i]} and {a[j]} for {target} ")
+            flag = True
+    if flag:
+        break
+else:
+    print("not found")
         
